@@ -1,0 +1,33 @@
+.nav-underline {
+    position: relative;
+}
+
+.nav-underline::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: 0px;
+    background-color: yellow;
+    width: 0;
+    transition: all ease-in-out .3s !important;
+}
+
+.nav-underline:hover::after {
+    width: 100%;
+}
+
+.dropdown-menu {
+    background-color: #0d6efd;
+}
+
+/* form{
+    position: relative;
+}
+.btn-search{
+    position: absolute;
+    right: 30%;
+    top: 30%;
+    color: gray;
+    cursor: text;
+} */
