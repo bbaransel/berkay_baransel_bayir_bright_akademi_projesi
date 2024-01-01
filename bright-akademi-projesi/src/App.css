@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -32,7 +32,37 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
+  }
+} */
+
+.hiro {
+  background: linear-gradient(45deg,
+      #00003b,
+      #33003b,
+      #66003b,
+      #99003b,
+      #99003b,
+      #66003b,
+      #33003b,
+      #00003b
+      );
+  animation: color 12s ease-in-out infinite;
+  background-size: 300% 300%;
+}
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
   }
 }

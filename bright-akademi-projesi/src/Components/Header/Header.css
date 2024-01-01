@@ -18,7 +18,28 @@
 }
 
 .dropdown-menu {
-    background-color: #0d6efd;
+    background-color: #66003b;
+}
+
+.navbar-scroll {
+    position: relative;
+    background: none;
+    z-index: 999;
+    opacity: 0.8;
+}
+
+.navbar-scroll.scrolled {
+    position: sticky;
+    background-color: #66003b;
+    opacity: 1;
+    width: 100%;
+    top: 0;
+    z-index: 999;
+}
+.logo-img{
+    background: none;
+    width: 100px;
+    height: 30px;
 }
 
 /* form{

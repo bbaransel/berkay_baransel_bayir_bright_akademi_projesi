@@ -6,6 +6,8 @@ import HomePage from './Pages/HomePage/HomePage';
 import Footer from './Components/Footer';
 import Contact from './Pages/Contact/Contact';
 import { useState } from 'react';
+import FloatingIcons from './Components/FloatingIcons/FloatingIcons';
+import { Container } from 'react-bootstrap';
 
 function App() {
   const [validated, setValidated] = useState(false);
@@ -19,17 +21,30 @@ function App() {
 
     setValidated(true);
   };
+  // Scroll yapıldığında navbarda yapılacak değişikleri uygulayan fonksiyon
+
+  document.addEventListener('scroll', () => {
+    const header = document.querySelector('.navbar-scroll');
+    if (window.scrollY > 0) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  })
 
   return (
     <>
-      <AppContext.Provider value={{validated, setValidated, handleSubmit}}>
+      <AppContext.Provider value={{ validated, setValidated, handleSubmit }}>
         <BrowserRouter>
+        <Container fluid className='hiro m-0 p-0' >
           <Header />
+          <FloatingIcons />
           <Routes>
             <Route path='/' element={<HomePage />} />
-            <Route path='/contact' element={<Contact />}/>
+            <Route path='/contact' element={<Contact />} />
           </Routes>
           <Footer />
+          </Container>
         </BrowserRouter>
       </AppContext.Provider>
     </>

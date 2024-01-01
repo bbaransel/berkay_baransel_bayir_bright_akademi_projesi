@@ -7,9 +7,9 @@ import './Header.css'
 const Header = () => {
     return (
         <>
-            <Navbar expand="lg" bg='primary' data-bs-theme="dark">
+            <Navbar expand="lg" data-bs-theme="dark" className='navbar-scroll'>
                 <Container>
-                    <Navbar.Brand href="/">Bright Akademi</Navbar.Brand>
+                    <Navbar.Brand href="/"><img className='logo-img' src={require('/public/images/logo.png')} alt="Bright" /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -19,7 +19,7 @@ const Header = () => {
                         >
                             <Nav.Link className='nav-underline' href="/">Ana Sayfa</Nav.Link>
                             <Nav.Link className='nav-underline' href="#action2">Hakkımızda</Nav.Link>
-                            <NavDropdown title="Eğitimlerimiz" id="navbarScrollingDropdown" data-bs-theme='light'>
+                            <NavDropdown title="Eğitimlerimiz" id="navbarScrollingDropdown" data-bs-theme='dark'>
                                 <NavDropdown.Item href="#action3">Full Stack Programlama Eğitimi</NavDropdown.Item>
                                 <NavDropdown.Divider />
                                 <NavDropdown.Item href="#action4">
