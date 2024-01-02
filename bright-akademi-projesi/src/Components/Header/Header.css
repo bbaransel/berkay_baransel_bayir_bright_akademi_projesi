@@ -8,7 +8,7 @@
     height: 3px;
     left: 0;
     bottom: 0px;
-    background-color: yellow;
+    background-color: #f8005f;
     width: 0;
     transition: all ease-in-out .3s !important;
 }
@@ -37,9 +37,8 @@
     z-index: 999;
 }
 .logo-img{
-    background: none;
-    width: 100px;
-    height: 30px;
+width: 50px;
+height: 50px;
 }
 
 /* form{

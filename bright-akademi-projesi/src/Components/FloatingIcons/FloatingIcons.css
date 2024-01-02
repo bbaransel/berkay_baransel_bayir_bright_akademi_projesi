@@ -1,5 +1,6 @@
-.float-icon{
+.float-icon {
     position: fixed;
     bottom: 3%;
     right: 3%;
+    z-index: 999;
 }

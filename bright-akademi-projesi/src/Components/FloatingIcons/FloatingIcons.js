@@ -11,7 +11,7 @@ const FloatingIcons = () => {
     return (
         <>
             <Link className='my-5 float-icon rounded-circle p-0' variant="light" ref={target} onClick={() => setShow(!show)}>
-                <i class="fa-solid fa-circle-plus fs-1 text-info "></i>
+                <i class="fa-solid fa-circle-plus fs-1 text-secondary "></i>
             </Link>
             <Overlay target={target.current} show={show} placement="top" >
                 {({

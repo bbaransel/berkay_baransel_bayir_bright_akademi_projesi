@@ -3,7 +3,7 @@ import './App.css';
 import { AppContext } from './Contexts/Context';
 import Header from './Components/Header/Header';
 import HomePage from './Pages/HomePage/HomePage';
-import Footer from './Components/Footer';
+import Footer from './Components/Footer/Footer';
 import Contact from './Pages/Contact/Contact';
 import { useState } from 'react';
 import FloatingIcons from './Components/FloatingIcons/FloatingIcons';
@@ -36,7 +36,7 @@ function App() {
     <>
       <AppContext.Provider value={{ validated, setValidated, handleSubmit }}>
         <BrowserRouter>
-        <Container fluid className='hiro m-0 p-0' >
+        <Container fluid className='wave m-0 p-0' >
           <Header />
           <FloatingIcons />
           <Routes>

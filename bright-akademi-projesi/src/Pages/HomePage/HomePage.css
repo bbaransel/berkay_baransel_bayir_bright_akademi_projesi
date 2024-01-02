@@ -14,11 +14,36 @@
 .spacer svg {
     position: relative;
     display: block;
-    width: calc(150% + 1.3px);
-    height: 120px;
+    width: calc(100% + 1.3px);
+    height: 245px;
     transform: rotateY(180deg);
 }
 
 .spacer .shape-fill {
-    fill: #7532f9;
+    fill: #99003B;
+}
+
+.spacer2 {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.spacer2 svg {
+    position: relative;
+    display: block;
+    width: calc(202% + 1.3px);
+    height: 225px;
+    transform: rotateY(180deg);
+}
+
+.spacer2 .shape-fill {
+    fill: #99003B;
+}
+
+.card-bau{
+    background-color: #33003b80;
 }
