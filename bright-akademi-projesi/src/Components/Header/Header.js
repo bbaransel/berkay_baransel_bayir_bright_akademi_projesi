@@ -1,14 +1,14 @@
 import React from 'react'
-import { Navbar, Container, NavDropdown, Form, Button, Nav, Image } from 'react-bootstrap'
+import { Navbar, Container, NavDropdown, Nav, Image } from 'react-bootstrap'
 import './Header.css'
+import logo from '../../Images/logo.png';
 
 const Header = () => {
     return (
         <>
             <Navbar expand="lg" data-bs-theme="dark" className='navbar-scroll'>
                 <Container>
-                    <Navbar.Brand href="/"><img className='logo-img' src='https://picsum.photos/id/237/50/50' alt="" /></Navbar.Brand>
-                    <Navbar.Brand href="/"><Image src='/public/Images/Screenshot_1.png' alt='' rounded className='logo-img' /></Navbar.Brand>
+                    <Navbar.Brand href="/"><Image src={logo} alt='' rounded/></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -17,7 +17,7 @@ const Header = () => {
                             navbarScroll
                         >
                             <Nav.Link className='nav-underline' href="/">Ana Sayfa</Nav.Link>
-                            <Nav.Link className='nav-underline' href="/#bau" >Hakkımızda</Nav.Link>
+                            <Nav.Link className='nav-underline' href="/about" >Hakkımızda</Nav.Link>
                             <NavDropdown title="Eğitimlerimiz" id="navbarScrollingDropdown" data-bs-theme='dark'>
                                 <NavDropdown.Item href="#action3">Full Stack Programlama Eğitimi</NavDropdown.Item>
                                 <NavDropdown.Divider />

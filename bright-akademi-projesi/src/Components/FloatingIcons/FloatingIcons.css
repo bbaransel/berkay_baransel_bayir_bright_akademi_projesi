@@ -4,3 +4,21 @@
     right: 3%;
     z-index: 999;
 }
+
+.float-icon i {
+    color: #14144a !important;
+}
+
+.btn-float {
+    background: none;
+    border: none;
+}
+
+.btn-float:hover {
+    background: none;
+    color: white;
+}
+
+.fa-linkedin:hover {
+    color: white;
+}

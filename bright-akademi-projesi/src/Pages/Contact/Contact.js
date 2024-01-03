@@ -9,10 +9,10 @@ const Contact = () => {
             <Container className='d-flex flex-row'>
                 <Row>
                     {/* map is not responsive!!!!*/}
-                    <Col xl="7">
+                    <Col xxl="7">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3009.1384843889086!2d29.004241476042324!3d41.04410057134562!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7a24975fe5d%3A0xa05d7aa13cfcaf89!2sBah%C3%A7e%C5%9Fehir%20%C3%9Cniversitesi%20Wissen%20Akademie!5e0!3m2!1str!2str!4v1703543059614!5m2!1str!2str" width="700" height="600" style={{ border: "0" }} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" className='my-5 '></iframe>
                     </Col>
-                    <Col xl="5">
+                    <Col xxl="5">
                         <Card className='p-3 my-5'>
                             <Form noValidate validated={context.validated} onSubmit={context.handleSubmit}>
                                 <Row className="mb-4">

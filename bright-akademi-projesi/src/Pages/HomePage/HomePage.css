@@ -1,11 +1,44 @@
+/* Hero */
 .hero {
-    margin: 0;
     background: none
 }
 
+.rounded-pill {
+    background-color: #14144a;
+    border-color: #14144a;
+}
+
+.rounded-pill:hover {
+    background-color: #141427;
+    border-color: #141427;
+}
+
+/* About */
+.card-bau {
+    background-color: #33003b80;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+
+.feature {
+    animation: feature-spinner 12s ease-in-out infinite reverse;
+}
+
+@keyframes feature-spinner {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(1080deg);
+    }
+}
+
+/* HomePage  */
+.hp-wrap {
+    position: relative;
+}
+
 .spacer {
-    top: 0;
-    left: 0;
     width: 100%;
     overflow: hidden;
     line-height: 0;
@@ -42,8 +75,4 @@
 
 .spacer2 .shape-fill {
     fill: #99003B;
-}
-
-.card-bau{
-    background-color: #33003b80;
 }

@@ -1,0 +1,29 @@
+.footer {
+    background: none;
+}
+
+.footer-container {
+    background-color: #66003B;
+}
+.footer-end{
+    border-top: 1px solid #cc003b;
+}
+.footer-wave {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.footer-wave svg {
+    position: relative;
+    display: block;
+    width: calc(204% + 1.3px);
+    height: 204px;
+}
+
+.footer-wave .shape-fill {
+    fill: #66003B;
+}

@@ -47,13 +47,12 @@
       #99003b,
       #66003b,
       #33003b,
-      #00003b
-      );
-  animation: color 12s ease-in-out infinite;
+      #00003b);
+  animation: color-wave 10s ease-in-out infinite;
   background-size: 300% 300%;
 }
 
-@keyframes color {
+@keyframes color-wave {
   0% {
     background-position: 0 50%;
   }

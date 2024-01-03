@@ -8,6 +8,7 @@ import Contact from './Pages/Contact/Contact';
 import { useState } from 'react';
 import FloatingIcons from './Components/FloatingIcons/FloatingIcons';
 import { Container } from 'react-bootstrap';
+import AboutPage from './Pages/AboutPage/AboutPage';
 
 function App() {
   const [validated, setValidated] = useState(false);
@@ -36,14 +37,15 @@ function App() {
     <>
       <AppContext.Provider value={{ validated, setValidated, handleSubmit }}>
         <BrowserRouter>
-        <Container fluid className='wave m-0 p-0' >
-          <Header />
-          <FloatingIcons />
-          <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/contact' element={<Contact />} />
-          </Routes>
-          <Footer />
+          <Container fluid className='wave m-0 p-0' >
+            <Header />
+            <FloatingIcons />
+            <Routes>
+              <Route path='/' element={<HomePage />} />
+              <Route path='/contact' element={<Contact />} />
+              <Route path='/about' element={<AboutPage />} />
+            </Routes>
+            <Footer />
           </Container>
         </BrowserRouter>
       </AppContext.Provider>
