@@ -7,7 +7,7 @@ import featurei3 from '../../Images/featurei3.png';
 const About = () => {
     return (
         <>
-            <Container fluid className='m-0'>
+        <Container className='d-flex flex-column justify-content-center align-items-center'>
                 <Card className='p-5 border-0 card-bau text-white' id='bau'>
                     <Card.Body>
                         <Card.Title className='display-3 my-5'>BAU Bright Nedir?</Card.Title>
@@ -17,7 +17,7 @@ const About = () => {
                     </Card.Body>
                     <Button variant='danger' className='my-3' href='/about'>Detaylı bilgi için tıklayınız</Button>
                 </Card>
-                <Row className='text-center my-5 pt-5 text-light'>
+                <Row className='text-center my-5 pt-5 text-light w-100'>
                     <Col md='4'>
                         <Image src={featurei1} roundedCircle className='feature mb-3' />
                         <h2>Eğitim</h2>

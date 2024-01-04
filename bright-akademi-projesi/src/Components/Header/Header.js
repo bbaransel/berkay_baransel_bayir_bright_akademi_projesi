@@ -19,17 +19,17 @@ const Header = () => {
                             <Nav.Link className='nav-underline' href="/">Ana Sayfa</Nav.Link>
                             <Nav.Link className='nav-underline' href="/about" >Hakkımızda</Nav.Link>
                             <NavDropdown title="Eğitimlerimiz" id="navbarScrollingDropdown" data-bs-theme='dark'>
-                                <NavDropdown.Item href="#action3">Full Stack Programlama Eğitimi</NavDropdown.Item>
+                                <NavDropdown.Item href="/educations/0">Full Stack Programlama Eğitimi</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action4">
+                                <NavDropdown.Item href="/educations/1">
                                     Network, Sistem ve Siber Güvenlik Uzmanlık Eğitimi
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action5">
+                                <NavDropdown.Item href="/educations/2">
                                     Bulut Bilişim Uzmanlık Eğitimi
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href='#action6'>
+                                <NavDropdown.Item href='/educations/3'>
                                     Full Data Uzmanlık Eğitimi
                                 </NavDropdown.Item>
                             </NavDropdown>
