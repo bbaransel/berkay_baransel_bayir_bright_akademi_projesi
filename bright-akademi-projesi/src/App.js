@@ -89,7 +89,7 @@ function App({ educations }) {
 
   //  Typewriter effect using react-simple-typewriter
   const [typewriterText] = useTypewriter({
-    words: ['Geleceğin Teknolojilerini BAU ile Kodla', 'Geleceğin Teknolojilerini BAU ile Kodla'],
+    words: ['Geleceğin Teknolojilerini BAU ile Kodla'],
     loop: {},
     typeSpeed: 120,
     deleteSpeed: 30
