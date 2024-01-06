@@ -9,7 +9,8 @@ import { useState } from 'react';
 import FloatingIcons from './Components/FloatingIcons/FloatingIcons';
 import { Container } from 'react-bootstrap';
 import AboutPage from './Pages/AboutPage/AboutPage';
-import Education from './Components/Education/Education';
+import EducationDetails from './Pages/EducationDetails/EducationDetails';
+import { useTypewriter, Cursor } from 'react-simple-typewriter';
 
 function App({ educations }) {
   const [validated, setValidated] = useState(false);
@@ -67,15 +68,35 @@ function App({ educations }) {
   // Instructors
   const inst = [
     {
-      Id:0,
-      Name:'Engin Niyazi Ergül',
+      Id: 0,
+      Name: 'Engin Niyazi Ergül',
       Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse semper ipsum porttitor, pulvinar nulla bibendum, dapibus magna.Nunc rutrum magna id leo convallis gravida.Vestibulum.',
-      Img:'../../Images/instructor1.png'
+      Img: '../../Images/instructor1.png'
+    },
+    {
+      Id: 1,
+      Name: 'Michael Jordan',
+      Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse semper ipsum porttitor, pulvinar nulla bibendum, dapibus magna.Nunc rutrum magna id leo convallis gravida.Vestibulum.',
+      Img: '../../Images/instructor2.jpg'
+    },
+    {
+      Id: 2,
+      Name: 'LeBron James',
+      Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse semper ipsum porttitor, pulvinar nulla bibendum, dapibus magna.Nunc rutrum magna id leo convallis gravida.Vestibulum.',
+      Img: '../../Images/instructor3.jpg'
     }
   ];
+
+  //  Typewriter effect using react-simple-typewriter
+  const [typewriterText] = useTypewriter({
+    words: ['Geleceğin Teknolojilerini BAU ile Kodla', 'Geleceğin Teknolojilerini BAU ile Kodla'],
+    loop: {},
+    typeSpeed: 120,
+    deleteSpeed: 30
+  });
   return (
     <>
-      <AppContext.Provider value={{ validated, setValidated, handleSubmit, edu }}>
+      <AppContext.Provider value={{ validated, setValidated, handleSubmit, edu, inst, typewriterText }}>
         <BrowserRouter>
           <Container fluid className='wave m-0 p-0' >
             <Header />
@@ -84,7 +105,7 @@ function App({ educations }) {
               <Route path='/' element={<HomePage />} />
               <Route path='/contact' element={<Contact />} />
               <Route path='/about' element={<AboutPage />} />
-              <Route path='/educations/:id' element={<Education />} />
+              <Route path='/educations/:id' element={<EducationDetails />} />
             </Routes>
             <Footer />
           </Container>

@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Navbar, Container, NavDropdown, Nav, Image } from 'react-bootstrap'
 import './Header.css'
 import logo from '../../Images/logo.png';
+import { AppContext } from '../../Contexts/Context';
 
 const Header = () => {
+    const context = useContext(AppContext);
     return (
         <>
             <Navbar expand="lg" data-bs-theme="dark" className='navbar-scroll'>
                 <Container>
-                    <Navbar.Brand href="/"><Image src={logo} alt='' rounded/></Navbar.Brand>
+                    <Navbar.Brand href="/"><Image src={logo} alt='' rounded /></Navbar.Brand>
                     <Navbar.Toggle aria-controls="navbarScroll" />
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
@@ -19,18 +21,18 @@ const Header = () => {
                             <Nav.Link className='nav-underline' href="/">Ana Sayfa</Nav.Link>
                             <Nav.Link className='nav-underline' href="/about" >Hakkımızda</Nav.Link>
                             <NavDropdown title="Eğitimlerimiz" id="navbarScrollingDropdown" data-bs-theme='dark'>
-                                <NavDropdown.Item href="/educations/0">Full Stack Programlama Eğitimi</NavDropdown.Item>
+                                <NavDropdown.Item href={`/educations/${context.edu[0].Id}`}>{context.edu[0].Name}</NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="/educations/1">
-                                    Network, Sistem ve Siber Güvenlik Uzmanlık Eğitimi
+                                <NavDropdown.Item href={`/educations/${context.edu[1].Id}`}>
+                                    {context.edu[1].Name}
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href="/educations/2">
-                                    Bulut Bilişim Uzmanlık Eğitimi
+                                <NavDropdown.Item href={`/educations/${context.edu[2].Id}`}>
+                                    {context.edu[2].Name}
                                 </NavDropdown.Item>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href='/educations/3'>
-                                    Full Data Uzmanlık Eğitimi
+                                <NavDropdown.Item href={`/educations/${context.edu[3].Id}`}>
+                                    {context.edu[3].Name}
                                 </NavDropdown.Item>
                             </NavDropdown>
                             <Nav.Link className='nav-underline' href='#action7'>Eğitmenlerimiz</Nav.Link>

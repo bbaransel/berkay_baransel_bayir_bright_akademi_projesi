@@ -8,7 +8,7 @@ const About = () => {
     return (
         <>
         <Container className='d-flex flex-column justify-content-center align-items-center'>
-                <Card className='p-5 border-0 card-bau text-white' id='bau'>
+                <Card className='p-5 border-0 card-bau text-white mt-5' id='bau'>
                     <Card.Body>
                         <Card.Title className='display-3 my-5'>BAU Bright Nedir?</Card.Title>
                         <Card.Text className='my-5 fs-4'>

@@ -41,13 +41,18 @@
     background-color: #33003b80;
     border-radius: 0.375rem;
 }
+
+.why-list-item:hover {
+    background-color: #cc003b;
+}
+
 /* Process */
-.process-card{
-    background-color: #33003b80 ;
+.process-card {
     border: none;
     position: relative;
 }
-.process-title{
+
+.process-title {
     position: absolute;
     background-color: #14144a;
     padding: .7rem 1.5rem .7rem .7rem;
@@ -56,6 +61,7 @@
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
 }
+
 /* HomePage  */
 .hp-wrap {
     position: relative;

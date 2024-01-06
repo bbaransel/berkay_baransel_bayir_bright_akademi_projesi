@@ -17,7 +17,7 @@ const Process = () => {
                 <h1 className='display-4 text-light my-5'>BAU Bright Süreci</h1>
                 <Row className='my-5'>
                     <Col xl={3} sm={6} className='px-5 mb-5'>
-                        <Card className='py-5 px-2 process-card text-light'>
+                        <Card className='py-5 px-2 process-card why-list-item text-light'>
                             <Card.Img src={png1} className='w-75 m-auto' />
                             <Card.Body>
                                 <Card.Title className='process-title'>
@@ -30,7 +30,7 @@ const Process = () => {
                         </Card>
                     </Col>
                     <Col xl={3} sm={6} className='px-5 mb-5'>
-                        <Card className='py-5 px-2 process-card text-light'>
+                        <Card className='py-5 px-2 process-card why-list-item text-light'>
                             <Card.Img src={png2} className='w-75 m-auto' />
                             <Card.Body>
                                 <Card.Title className='process-title'>
@@ -43,7 +43,7 @@ const Process = () => {
                         </Card>
                     </Col>
                     <Col xl={3} sm={6} className='px-5 mb-5'>
-                        <Card className='py-5 px-2 process-card text-light'>
+                        <Card className='py-5 px-2 process-card why-list-item text-light'>
                             <Card.Img src={png3} className='w-75 m-auto' />
                             <Card.Body>
                                 <Card.Title className='process-title'>
@@ -56,7 +56,7 @@ const Process = () => {
                         </Card>
                     </Col>
                     <Col xl={3} sm={6} className='px-5 mb-5'>
-                        <Card className='py-5 px-2 process-card text-light'>
+                        <Card className='py-5 px-2 process-card why-list-item text-light'>
                             <Card.Img src={png4} className='w-75 m-auto' />
                             <Card.Body>
                                 <Card.Title className='process-title'>
@@ -71,7 +71,7 @@ const Process = () => {
                 </Row>
                 <Row className='mb-5'>
                     <Col xl={3} sm={6} className='px-5 mb-5'>
-                        <Card className='py-5 px-2 process-card text-light'>
+                        <Card className='py-5 px-2 process-card why-list-item text-light'>
                             <Card.Img src={png5} className='w-75 m-auto' />
                             <Card.Body>
                                 <Card.Title className='process-title'>
@@ -84,7 +84,7 @@ const Process = () => {
                         </Card>
                     </Col>
                     <Col xl={3} sm={6} className='px-5 mb-5'>
-                        <Card className='py-5 px-2 process-card text-light'>
+                        <Card className='py-5 px-2 process-card why-list-item text-light'>
                             <Card.Img src={png6} className='w-75 m-auto' />
                             <Card.Body>
                                 <Card.Title className='process-title'>
@@ -97,7 +97,7 @@ const Process = () => {
                         </Card>
                     </Col>
                     <Col xl={3} sm={6} className='px-5 mb-5'>
-                        <Card className='py-5 px-2 process-card text-light'>
+                        <Card className='py-5 px-2 process-card why-list-item text-light'>
                             <Card.Img src={png7} className='w-75 m-auto' />
                             <Card.Body>
                                 <Card.Title className='process-title'>
@@ -110,7 +110,7 @@ const Process = () => {
                         </Card>
                     </Col>
                     <Col xl={3} sm={6} className='px-5 mb-5'>
-                        <Card className='py-5 px-2 process-card text-light'>
+                        <Card className='py-5 px-2 process-card why-list-item text-light'>
                             <Card.Img src={png8} className='w-75 m-auto' />
                             <Card.Body>
                                 <Card.Title className='process-title'>
@@ -125,7 +125,7 @@ const Process = () => {
                 </Row>
                 <Row className='d-flex justify-content-center align-items-center mb-5'>
                     <Col xl={4} sm={6} className='px-5 mb-5'>
-                        <Card className='py-5 px-2 process-card text-light'>
+                        <Card className='py-5 px-2 process-card why-list-item text-light'>
                             <Card.Img src={png9} className='w-75 m-auto' />
                             <Card.Body>
                                 <Card.Title className='process-title'>
