@@ -11,6 +11,7 @@ import { Container } from 'react-bootstrap';
 import AboutPage from './Pages/AboutPage/AboutPage';
 import EducationDetails from './Pages/EducationDetails/EducationDetails';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
+import Instructors from './Pages/Instructors/Instructors';
 
 function App({ educations }) {
   const [validated, setValidated] = useState(false);
@@ -106,6 +107,7 @@ function App({ educations }) {
               <Route path='/contact' element={<Contact />} />
               <Route path='/about' element={<AboutPage />} />
               <Route path='/educations/:id' element={<EducationDetails />} />
+              <Route path='/instructors' element={<Instructors />} />
             </Routes>
             <Footer />
           </Container>
