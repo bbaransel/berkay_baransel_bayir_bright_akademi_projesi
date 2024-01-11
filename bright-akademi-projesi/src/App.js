@@ -72,19 +72,25 @@ function App({ educations }) {
       Id: 0,
       Name: 'Engin Niyazi Ergül',
       Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse semper ipsum porttitor, pulvinar nulla bibendum, dapibus magna.Nunc rutrum magna id leo convallis gravida.Vestibulum.',
-      Img: '../../Images/instructor1.png'
+      Github: 'https://github.com/enginhoca',
+      Phone: "0500 000 0000",
+      Email:"engin.ergul@wissenakademie.com"
     },
     {
       Id: 1,
       Name: 'Michael Jordan',
       Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse semper ipsum porttitor, pulvinar nulla bibendum, dapibus magna.Nunc rutrum magna id leo convallis gravida.Vestibulum.',
-      Img: '../../Images/instructor2.jpg'
+      Github: 'https://github.com/bbaransel?tab=following',
+      Phone: "0500 000 0000",
+      Email: "michealjordan@wissenakademie.com"
     },
     {
       Id: 2,
-      Name: 'LeBron James',
+      Name: 'Mustafa Kemal Atatürk',
       Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse semper ipsum porttitor, pulvinar nulla bibendum, dapibus magna.Nunc rutrum magna id leo convallis gravida.Vestibulum.',
-      Img: '../../Images/instructor3.jpg'
+      Github: 'https://github.com/bbaransel?tab=following',
+      Phone:"0500 000 0000",
+      Email:"mustafakemalatatürk@wissenakademie.com"
     }
   ];
 

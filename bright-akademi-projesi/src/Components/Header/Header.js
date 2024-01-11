@@ -35,7 +35,7 @@ const Header = () => {
                                     {context.edu[3].Name}
                                 </NavDropdown.Item>
                             </NavDropdown>
-                            <Nav.Link className='nav-underline' href='#action7'>Eğitmenlerimiz</Nav.Link>
+                            <Nav.Link className='nav-underline' href='/instructors'>Eğitmenlerimiz</Nav.Link>
                             <Nav.Link className='nav-underline' href='/contact'>İletişim</Nav.Link>
                         </Nav>
                         {/* <Form className="d-flex" data-bs-theme="light">
