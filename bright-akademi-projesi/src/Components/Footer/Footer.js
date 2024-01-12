@@ -15,7 +15,7 @@ const Footer = () => {
                     <Image src={logo} style={{ width: '180px', height: '57' }} className='mb-5' />
                     <ButtonGroup className='mb-1'>
                         <Button variant='light' className='rounded-circle p-1 btn-float' href='https://github.com/bbaransel' target='_blank'><i className="fa-brands fa-github fs-3"></i></Button>
-                        <Button variant='light' className='rounded-circle p-1 btn-float' href='https://github.com/bbaransel' target='_blank'><i className="fa-brands fa-linkedin fs-3"></i></Button>
+                        <Button variant='light' className='rounded-circle p-1 btn-float' href='https://www.linkedin.com/in/berkay-baransel-bayir-334465282/' target='_blank'><i className="fa-brands fa-linkedin fs-3"></i></Button>
                     </ButtonGroup>
                     <div className='w-25 m-auto pt-3 footer-end'>Copyright &copy; 2023 Berkay Baransel BAYIR. </div>
                 </Container>

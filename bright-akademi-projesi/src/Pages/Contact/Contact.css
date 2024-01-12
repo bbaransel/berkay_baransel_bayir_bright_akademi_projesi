@@ -1,0 +1,9 @@
+.map-responsive {
+    max-width: 1000px !important;
+}
+
+.map-responsive iframe {
+    width: 100% !important;
+    border: 0 !important;
+    background-color: #bd3d5480;
+}

@@ -3,7 +3,7 @@ import { AppContext } from '../../Contexts/Context';
 import { useParams } from 'react-router-dom';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
 import "./InstructorDetails.css";
 
 const InstructorDetails = () => {
@@ -16,7 +16,7 @@ const InstructorDetails = () => {
           <Col lg={5}>
             <Card.Body className='d-flex flex-column justify-content-center align-items-center'>
               <Card.Img src={context.images[id].url} className='mt-3 rounded-circle' />
-              <Card.Text className='mt-5'> {context.inst[id].Email}</Card.Text>
+              <Card.Text className='mt-5 text-center'><FontAwesomeIcon className='me-1 inst-detail-phone' icon={faEnvelope} /> {context.inst[id].Email}</Card.Text>
               <Card.Text className='my-2'><FontAwesomeIcon className='me-2 inst-detail-phone' icon={faPhone} />{context.inst[id].Phone}</Card.Text>
             </Card.Body>
             <Card.Footer className='bg-transparent text-center py-3'>

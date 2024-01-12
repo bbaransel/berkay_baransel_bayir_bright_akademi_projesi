@@ -1,5 +1,5 @@
 import React, { useContext, useEffect, useState } from 'react'
-import { Button, Card, Col, Container, Row, } from 'react-bootstrap'
+import { Button, Card, Container, Row, } from 'react-bootstrap'
 import './Instructors.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
@@ -10,40 +10,20 @@ const Instructors = () => {
   const context = useContext(AppContext)
   const [imageIndex, setImageIndex] = useState(0);
 
-  const auto = true;
   function nextImage() {
-    setImageIndex((index) => {
-      if (index === context.images.length - 1) return 0
-      return index + 1
-    })
-  }
-  function prevImage() {
-    setImageIndex((index) => {
-      if (index === 0) return context.images.length - 1
-      return index - 1
-    })
-  }
-  function slideInterval() {
-    setInterval(() => {
-      nextImage();
-    }, 3000)
-  }
-  function autoNext() {
-    if (auto) {
-      slideInterval();
-    }
-  }
-  function resetAuto() {
-    if (auto) {
-      clearInterval(slideInterval)
-      slideInterval();
-    }
+    setImageIndex(imageIndex === context.images.length - 1 ? 0 : imageIndex + 1)
 
   }
+  function prevImage() {
+    setImageIndex(imageIndex < 1 ? context.images.length - 1 : imageIndex - 1)
+  }
   useEffect(() => {
-    autoNext();
-    resetAuto();
-  }, [])
+    const slideInterval = setInterval(() => {
+      nextImage()
+    }, 3500)
+    return () => clearInterval(slideInterval)
+  }, [imageIndex])
+
 
 
 

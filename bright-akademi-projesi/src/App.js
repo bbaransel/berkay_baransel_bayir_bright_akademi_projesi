@@ -17,6 +17,9 @@ import InstructorDetails from './Pages/InstructorDetails/InstructorDetails';
 import instructor1 from './Images/instructor1.png';
 import instructor2 from './Images/instructor2.jpg';
 import instructor3 from './Images/instructor3.jpg';
+import instructor4 from './Images/instructor4.jpg';
+import instructor5 from './Images/instructor5.jpg';
+import instructor6 from './Images/instructor6.jpg';
 
 function App({ educations }) {
   const [validated, setValidated] = useState(false);
@@ -78,8 +81,8 @@ function App({ educations }) {
       Name: 'Engin Niyazi Ergül',
       Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse semper ipsum porttitor, pulvinar nulla bibendum, dapibus magna.Nunc rutrum magna id leo convallis gravida.Vestibulum.',
       Github: 'https://github.com/enginhoca',
-      Linkedin: "https://www.linkedin.com/",
-      Phone: "0500 000 0000",
+      Linkedin: "https://www.linkedin.com/in/enginniyazi/",
+      Phone: "+90 (500) 000 0000",
       Email: "engin.ergul@wissenakademie.com"
     },
     {
@@ -87,17 +90,44 @@ function App({ educations }) {
       Name: 'Michael Jordan',
       Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse semper ipsum porttitor, pulvinar nulla bibendum, dapibus magna.Nunc rutrum magna id leo convallis gravida.Vestibulum.',
       Github: 'https://github.com/bbaransel?tab=following',
-      Linkedin: "www.linkedin.com/in/berkay-baransel-bayir-334465282/",
-      Phone: "0500 000 0000",
+      Linkedin: "https://www.linkedin.com/in/berkay-baransel-bayir-334465282/",
+      Phone: "+90 (500) 000 0000",
       Email: "email@wissenakademie.com"
     },
     {
       Id: 2,
-      Name: 'Mustafa Kemal Atatürk',
+      Name: 'Olivia Dunham',
       Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse semper ipsum porttitor, pulvinar nulla bibendum, dapibus magna.Nunc rutrum magna id leo convallis gravida.Vestibulum.',
       Github: 'https://github.com/bbaransel?tab=following',
-      Linkedin: "https://www.linkedin.com/",
-      Phone: "0500 000 0000",
+      Linkedin: "https://www.linkedin.com/in/berkay-baransel-bayir-334465282/",
+      Phone: "+90 (500) 000 0000",
+      Email: "email@wissenakademie.com"
+    },
+    {
+      Id: 3,
+      Name: 'Sheldon Cooper',
+      Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse semper ipsum porttitor, pulvinar nulla bibendum, dapibus magna.Nunc rutrum magna id leo convallis gravida.Vestibulum.',
+      Github: 'https://github.com/bbaransel?tab=following',
+      Linkedin: "https://www.linkedin.com/in/berkay-baransel-bayir-334465282/",
+      Phone: "+90 (500) 000 0000",
+      Email: "email@wissenakademie.com"
+    },
+    {
+      Id: 4,
+      Name: 'Patrick Jane',
+      Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse semper ipsum porttitor, pulvinar nulla bibendum, dapibus magna.Nunc rutrum magna id leo convallis gravida.Vestibulum.',
+      Github: 'https://github.com/bbaransel?tab=following',
+      Linkedin: "https://www.linkedin.com/in/berkay-baransel-bayir-334465282/",
+      Phone: "+90 (500) 000 0000",
+      Email: "email@wissenakademie.com"
+    },
+    {
+      Id: 5,
+      Name: 'Phoebe Buffay',
+      Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse semper ipsum porttitor, pulvinar nulla bibendum, dapibus magna.Nunc rutrum magna id leo convallis gravida.Vestibulum.',
+      Github: 'https://github.com/bbaransel?tab=following',
+      Linkedin: "https://www.linkedin.com/in/berkay-baransel-bayir-334465282/",
+      Phone: "+90 (500) 000 0000",
       Email: "email@wissenakademie.com"
     }
   ];
@@ -105,7 +135,10 @@ function App({ educations }) {
   const images = [
     { url: instructor1, alt: "Eğitmen Görseli 1" },
     { url: instructor2, alt: "Eğitmen Görseli 2" },
-    { url: instructor3, alt: "Eğitmen Görseli 3" }
+    { url: instructor3, alt: "Eğitmen Görseli 3" },
+    { url: instructor4, alt: "Eğitmen Görseli 4" },
+    { url: instructor5, alt: "Eğitmen Görseli 5" },
+    { url: instructor6, alt: "Eğitmen Görseli 6" }
   ]
 
   //  Typewriter effect using react-simple-typewriter
