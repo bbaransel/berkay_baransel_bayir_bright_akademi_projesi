@@ -12,10 +12,10 @@ const Footer = () => {
                     </svg>
                 </div>
                 <Container className='m-0 p-3 footer-container d-flex flex-column justfiy-content-center align-items-center' fluid>
-                    <Image src={logo} style={{width:'180px', height:'57'}} className='mb-5' />
+                    <Image src={logo} style={{ width: '180px', height: '57' }} className='mb-5' />
                     <ButtonGroup className='mb-1'>
-                        <Button variant='light' className='rounded-circle p-1 btn-float' href='https://github.com/bbaransel'><i className="fa-brands fa-github fs-3"></i></Button>
-                        <Button variant='light' className='rounded-circle p-1 btn-float' href='https://github.com/bbaransel'><i className="fa-brands fa-linkedin fs-3"></i></Button>
+                        <Button variant='light' className='rounded-circle p-1 btn-float' href='https://github.com/bbaransel' target='_blank'><i className="fa-brands fa-github fs-3"></i></Button>
+                        <Button variant='light' className='rounded-circle p-1 btn-float' href='https://github.com/bbaransel' target='_blank'><i className="fa-brands fa-linkedin fs-3"></i></Button>
                     </ButtonGroup>
                     <div className='w-25 m-auto pt-3 footer-end'>Copyright &copy; 2023 Berkay Baransel BAYIR. </div>
                 </Container>

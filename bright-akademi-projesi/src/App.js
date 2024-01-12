@@ -12,6 +12,11 @@ import AboutPage from './Pages/AboutPage/AboutPage';
 import EducationDetails from './Pages/EducationDetails/EducationDetails';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import Instructors from './Pages/Instructors/Instructors';
+import InstructorDetails from './Pages/InstructorDetails/InstructorDetails';
+
+import instructor1 from './Images/instructor1.png';
+import instructor2 from './Images/instructor2.jpg';
+import instructor3 from './Images/instructor3.jpg';
 
 function App({ educations }) {
   const [validated, setValidated] = useState(false);
@@ -73,26 +78,35 @@ function App({ educations }) {
       Name: 'Engin Niyazi Ergül',
       Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse semper ipsum porttitor, pulvinar nulla bibendum, dapibus magna.Nunc rutrum magna id leo convallis gravida.Vestibulum.',
       Github: 'https://github.com/enginhoca',
+      Linkedin: "https://www.linkedin.com/",
       Phone: "0500 000 0000",
-      Email:"engin.ergul@wissenakademie.com"
+      Email: "engin.ergul@wissenakademie.com"
     },
     {
       Id: 1,
       Name: 'Michael Jordan',
       Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse semper ipsum porttitor, pulvinar nulla bibendum, dapibus magna.Nunc rutrum magna id leo convallis gravida.Vestibulum.',
       Github: 'https://github.com/bbaransel?tab=following',
+      Linkedin: "www.linkedin.com/in/berkay-baransel-bayir-334465282/",
       Phone: "0500 000 0000",
-      Email: "michealjordan@wissenakademie.com"
+      Email: "email@wissenakademie.com"
     },
     {
       Id: 2,
       Name: 'Mustafa Kemal Atatürk',
       Desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.Suspendisse semper ipsum porttitor, pulvinar nulla bibendum, dapibus magna.Nunc rutrum magna id leo convallis gravida.Vestibulum.',
       Github: 'https://github.com/bbaransel?tab=following',
-      Phone:"0500 000 0000",
-      Email:"mustafakemalatatürk@wissenakademie.com"
+      Linkedin: "https://www.linkedin.com/",
+      Phone: "0500 000 0000",
+      Email: "email@wissenakademie.com"
     }
   ];
+  //Instructor Images
+  const images = [
+    { url: instructor1, alt: "Eğitmen Görseli 1" },
+    { url: instructor2, alt: "Eğitmen Görseli 2" },
+    { url: instructor3, alt: "Eğitmen Görseli 3" }
+  ]
 
   //  Typewriter effect using react-simple-typewriter
   const [typewriterText] = useTypewriter({
@@ -103,7 +117,7 @@ function App({ educations }) {
   });
   return (
     <>
-      <AppContext.Provider value={{ validated, setValidated, handleSubmit, edu, inst, typewriterText }}>
+      <AppContext.Provider value={{ validated, setValidated, handleSubmit, edu, inst, typewriterText, images }}>
         <BrowserRouter>
           <Container fluid className='wave m-0 p-0' >
             <Header />
@@ -114,6 +128,7 @@ function App({ educations }) {
               <Route path='/about' element={<AboutPage />} />
               <Route path='/educations/:id' element={<EducationDetails />} />
               <Route path='/instructors' element={<Instructors />} />
+              <Route path='/instructors/:id' element={<InstructorDetails />} />
             </Routes>
             <Footer />
           </Container>

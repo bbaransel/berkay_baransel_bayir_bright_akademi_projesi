@@ -1,0 +1,9 @@
+.inst-detail-card {
+    background-color: #33003b80;
+}
+
+.inst-detail-card i,
+.inst-detail-title,
+.inst-detail-phone {
+    color: #ffb208;
+}

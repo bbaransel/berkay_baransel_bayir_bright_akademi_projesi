@@ -1,6 +1,5 @@
 import React from 'react'
 import { Card, Container, ListGroup, ListGroupItem } from 'react-bootstrap'
-import './AboutPage.css'
 const AboutPage = () => {
   return (
     <>

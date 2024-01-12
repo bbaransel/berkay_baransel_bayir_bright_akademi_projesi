@@ -34,9 +34,9 @@ const FloatingIcons = () => {
                             rowGap: '10px'
                         }}
                     >
-                        <Button variant='light' className='rounded-circle p-1 btn-float' href='/contact'><i className="fa-solid fa-phone fs-1"></i></Button>
-                        <Button variant='light' className='rounded-circle text-primary p-1 btn-float' href='www.linkedin.com/in/berkay-baransel-bayir-334465282'><i className="fa-brands fa-linkedin fs-1"></i></Button>
-                        <Button variant='light' className='rounded-circle p-1 mb-3 btn-float' href='https://github.com/bbaransel'><i className="fa-brands fa-github fs-1"></i></Button>
+                        <Button variant='light' className='rounded-circle p-1 btn-float' href='/contact' target='_blank'><i className="fa-solid fa-phone fs-1"></i></Button>
+                        <Button variant='light' className='rounded-circle text-primary p-1 btn-float' href='www.linkedin.com/in/berkay-baransel-bayir-334465282' target='_blank'><i className="fa-brands fa-linkedin fs-1"></i></Button>
+                        <Button variant='light' className='rounded-circle p-1 mb-3 btn-float' href='https://github.com/bbaransel' target='_blank'><i className="fa-brands fa-github fs-1"></i></Button>
                     </div>
                 )}
             </Overlay>
