@@ -1,8 +1,5 @@
 # berkay_baransel_bayir_bright_akademi_projesi
 
-## Proje Planlaması 
-
-## Kullanılan teknolojiler
     -Styling için genel olarak bootstrap componentlerini ve classlarını kullandım.
     -Bootstrapin yetmediği yerlerde Css kullandım. Yazdığım style'ları düzenli olması ve bir componentin css dosyasını aradığımda rahatça bulabilmek için genelde ilgili component veya page ile aynı klasörde tuttum.
     -Projede kullandığım bilgilerin çoğunu "https://baubright.com/" ve "https://www.wissenakademie.com/" adreslerinden aldım.
@@ -17,7 +14,7 @@
         -Otomatik geçiş animasyonunu oluştururken useEffectin;
             birinci parametresinde setInterval fonksiyonunu hazırlayıp bir değişken içine aldım
             ikinci parametresinde birinci parametrede tanımladığım değişkeni clearInterval fonksiyonu içine yazarak setIntervalimi sıfırlayacak kısmı yazdım.
-             üçüncü parametresine [imageIndex] yazarak da animasyonumun sıfırlamak için takip edeceği durumu belirttim böylece sayfa ilk çalıştığında ve imageIndexin değeri her değiştiğinde zamanlamayı yenileyecek.
+                üçüncü parametresine [imageIndex] yazarak da animasyonumun sıfırlamak için takip edeceği durumu belirttim böylece sayfa ilk çalıştığında ve imageIndexin değeri her değiştiğinde zamanlamayı yenileyecek.
     -Hero'm da kullandığım daktilo animasyonunu node.js ile indirdiğim react-simple-typewriter isimli bir component ile yaptım. (https://www.npmjs.com/package/react-simple-typewriter?activeTab=readme) Nasıl çalıştığını bağlantıdaki usage kısmından ve bir kaç deneme yanılma ile öğrenip kullandım.
     -Ana Sayfada kullandığım dalga şekillerini araştırma yapanken karşıma çıkan bir site olan "https://www.shapedivider.app/" yardımı ile yaptım basit ve kullanışlı bir site.
     -Linklerimi sonradan react-router-dom yapısına uygun olarak değiştirdiğim( Önceden navbarda bir linke tıkladığımda sayfa yenileniyordu şuan yenilenmiyor ) için şuanda navbarımdaki dropdown menum de bir sayfaya tıklandığında menu otomatik kapanmıyor, linklerin react-router-dom yapısına uygun olmadığını geç fark ettiğim için şuan dropdown menuyü yetiştiremedim fakat sonradan bakacağım.

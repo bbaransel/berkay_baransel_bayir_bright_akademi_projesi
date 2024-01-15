@@ -1,2 +1,21 @@
 # berkay_baransel_bayir_bright_akademi_projesi
- 
+
+    -Styling için genel olarak bootstrap componentlerini ve classlarını kullandım.
+    -Bootstrapin yetmediği yerlerde Css kullandım. Yazdığım style'ları düzenli olması ve bir componentin css dosyasını aradığımda rahatça bulabilmek için genelde ilgili component veya page ile aynı klasörde tuttum.
+    -Projede kullandığım bilgilerin çoğunu "https://baubright.com/" ve "https://www.wissenakademie.com/" adreslerinden aldım.
+    -Renk seçimlerimi internette arayıp bulduğum bir palet ile yaptım ( genel olarak bu palet üstünden çalıştım "https://www.color-hex.com/color-palette/82839" )
+    -Projenin başında bu kullanacağım renkleri ayrı css dosyasının içinde birer değişkenin içine almak aklıma gelmediği için yapmadım ve sonradan da yapmadığım için çok pişman oldum.
+    -Arkaplan animasyonumu oluştururken önce backgrounduma linear-gradient bir color değeri vererek birden çok rengi yanyana yumuşak bir geçiş ile gördüm. Sonrasında @keyframes yardımı ile boyutunu 3 katına çıkardığım backgroundımın pozisyononu değiştirecek kodları yazdım ve sağa sola loop halinde haraket etmesini sağladım.
+    -Eğitim türlerinin özelliklerini bir obje içine alıp, tüm eğitim türlerini bir dizi içine aldım. Böylece tek bir eğitim detay sayfası (EducationsDetails) hazırlayıp useContext ve useParams yardımı ile her eğitim detayı için ayrı sayfa oluşturabildim.
+    -Bütün eğitimlerin tek sayfada göstermek istemedim bu yüzden bir Eğitimler sayfam yok ama ana sayfaya her bir eğitimi bir card yapısı içinde Map() yardımı ile tek bir component hazırlayarak ekleyebilirdim.
+    -Eğitim türleri için yaptıklarımın benzerini Eğitmenler ve Eğitmenler Detay Sayfası için de yaptım. Başta bootstrapten hazır Image Carousel yapısını aldım fakat çözemediğim bir nedenden ötürü çalıştıramadım(Projeden sonra bakıp çözüceğim). Bu yüzden kendim bir image slider yaptım. İlk olarak daha öncesinde ödev olarak yapmış olduğumuzdan yararlanmak istedim fakat addEventListener tarzı fonksiyonlar çalışmadığı için değiştirmem gerekti. Imagelarımı src kısmına dosya yolu olarak vermeye çalıştığımda sayfada görüntülenmiyorlardı ben de biraz araştırıp görseli bir değişkenin içine import ederek öyle source kısmına yazdım.Sliderımda kullanacağım imagelarım için oluşturduğum bu değişkenleri bir dizi içine aldım ve Map() yardımı ile sliderımı oluşturdum. 
+        -Sliderda önceki ve sonraki görsele gitmemi sağlayacak fonksiyonlarımda kullanmak için useState ile bir tane imageIndex adında değişken oluşturdum.
+        -Oluşturduğum bu imageIndex değişkenini kullanarak sadece previous ve next fonksiyonlarımı değil ayrıca otomatik geçiş efektini de hazırladım.
+        -Otomatik geçiş animasyonunu oluştururken useEffectin;
+            birinci parametresinde setInterval fonksiyonunu hazırlayıp bir değişken içine aldım
+            ikinci parametresinde birinci parametrede tanımladığım değişkeni clearInterval fonksiyonu içine yazarak setIntervalimi sıfırlayacak kısmı yazdım.
+                üçüncü parametresine [imageIndex] yazarak da animasyonumun sıfırlamak için takip edeceği durumu belirttim böylece sayfa ilk çalıştığında ve imageIndexin değeri her değiştiğinde zamanlamayı yenileyecek.
+    -Hero'm da kullandığım daktilo animasyonunu node.js ile indirdiğim react-simple-typewriter isimli bir component ile yaptım. (https://www.npmjs.com/package/react-simple-typewriter?activeTab=readme) Nasıl çalıştığını bağlantıdaki usage kısmından ve bir kaç deneme yanılma ile öğrenip kullandım.
+    -Ana Sayfada kullandığım dalga şekillerini araştırma yapanken karşıma çıkan bir site olan "https://www.shapedivider.app/" yardımı ile yaptım basit ve kullanışlı bir site.
+    -Linklerimi sonradan react-router-dom yapısına uygun olarak değiştirdiğim( Önceden navbarda bir linke tıkladığımda sayfa yenileniyordu şuan yenilenmiyor ) için şuanda navbarımdaki dropdown menum de bir sayfaya tıklandığında menu otomatik kapanmıyor, linklerin react-router-dom yapısına uygun olmadığını geç fark ettiğim için şuan dropdown menuyü yetiştiremedim fakat sonradan bakacağım.
+    -Olabildiğince componentlerden yararlanmaya çalıştım. Yanlışlarım ve eksiklerim konusunda geri dönüş yaparsanız çok sevinirim. Projeyi yaparken yeni şeyler öğrenmek, öğrendiklerimi kullanmak, hata yapmak ve bu hataları çözmek çok keyifliydi, vakit ayırdığınız için teşekkürler.
