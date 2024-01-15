@@ -24,7 +24,6 @@ const Contact = () => {
                                             required
                                             type="text"
                                             placeholder="Adınızı giriniz"
-                                        // defaultValue="Mark"
                                         />
                                         <Form.Control.Feedback>Güzel görünüyor.</Form.Control.Feedback>
                                     </Form.Group>
@@ -35,7 +34,6 @@ const Contact = () => {
                                             required
                                             type="text"
                                             placeholder="Soyadınızı giriniz"
-                                        // defaultValue="Otto"
                                         />
                                         <Form.Control.Feedback>Güzel Görünüyor!</Form.Control.Feedback>
                                     </Form.Group>
@@ -82,14 +80,6 @@ const Contact = () => {
                                         </Form.Control.Feedback>
                                     </Form.Group>
                                 </Row>
-                                {/* <Form.Group className="my-3">
-                            <Form.Check
-                                required
-                                label="Agree to terms and conditions"
-                                feedback="You must agree before submitting."
-                                feedbackType="invalid"
-                            />
-                        </Form.Group> */}
                                 <Button type="submit" variant='danger'>Gönder</Button>
                             </Form>
                         </Card>
