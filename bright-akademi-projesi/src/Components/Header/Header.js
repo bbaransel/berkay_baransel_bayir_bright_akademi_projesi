@@ -3,7 +3,7 @@ import { Navbar, Container, NavDropdown, Nav, Image } from 'react-bootstrap'
 import './Header.css'
 import logo from '../../Images/logo.png';
 import { AppContext } from '../../Contexts/Context';
-
+import { Link, NavLink, } from 'react-router-dom';
 const Header = () => {
     const context = useContext(AppContext);
     return (
@@ -15,42 +15,32 @@ const Header = () => {
                     <Navbar.Collapse id="navbarScroll">
                         <Nav
                             className="m-auto my-2 my-lg-0 w-75 justify-content-around "
-                            style={{ maxHeight: '100px' }}
+                            style={{ maxHeight: '400px' }}
                             navbarScroll
                         >
-                            <Nav.Link className='nav-underline' href="/">Ana Sayfa</Nav.Link>
-                            <Nav.Link className='nav-underline' href="/about" >Hakkımızda</Nav.Link>
+                            <NavLink className='nav-underline nav-link' to="/">Ana Sayfa</NavLink>
+                            <NavLink className='nav-underline nav-link' to="/about" >Hakkımızda</NavLink>
                             <NavDropdown title="Eğitimlerimiz" id="navbarScrollingDropdown" data-bs-theme='dark'>
-                                <NavDropdown.Item href={`/educations/${context.edu[0].Id}`}>{context.edu[0].Name}</NavDropdown.Item>
+                                <Link className='dropdown-item' to={`/educations/${context.edu[0].Id}`}>{context.edu[0].Name}</Link>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href={`/educations/${context.edu[1].Id}`}>
+                                <Link className='dropdown-item' to={`/educations/${context.edu[1].Id}`}>
                                     {context.edu[1].Name}
-                                </NavDropdown.Item>
+                                </Link>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href={`/educations/${context.edu[2].Id}`}>
+                                <Link className='dropdown-item' to={`/educations/${context.edu[2].Id}`}>
                                     {context.edu[2].Name}
-                                </NavDropdown.Item>
+                                </Link>
                                 <NavDropdown.Divider />
-                                <NavDropdown.Item href={`/educations/${context.edu[3].Id}`}>
+                                <Link className='dropdown-item' to={`/educations/${context.edu[3].Id}`}>
                                     {context.edu[3].Name}
-                                </NavDropdown.Item>
+                                </Link>
                             </NavDropdown>
-                            <Nav.Link className='nav-underline' href='/instructors'>Eğitmenlerimiz</Nav.Link>
-                            <Nav.Link className='nav-underline' href='/contact'>İletişim</Nav.Link>
+                            <NavLink className='nav-underline nav-link' to='/instructors'>Eğitmenlerimiz</NavLink>
+                            <NavLink className='nav-underline nav-link' to='/contact'>İletişim</NavLink>
                         </Nav>
-                        {/* <Form className="d-flex" data-bs-theme="light">
-                            <Form.Control
-                                type="search"
-                                placeholder="A"
-                                className=""
-                                aria-label="Ara"
-                            />
-                            <FontAwesomeIcon className='btn-search' icon={faMagnifyingGlass} />
-                            <Button variant="primary">Ara</Button>
-                        </Form> */}
                     </Navbar.Collapse>
                 </Container>
-            </Navbar>
+            </Navbar >
         </>
     )
 }

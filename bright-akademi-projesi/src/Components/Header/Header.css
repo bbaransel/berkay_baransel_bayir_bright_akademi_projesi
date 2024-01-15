@@ -24,9 +24,11 @@
 
 .dropdown-item {
     opacity: 1 !important;
+    overflow-x: hidden;
 }
 
-.dropdown-item:hover {
+.dropdown-item:hover,
+.dropdown-item:focus {
     background-color: #910054;
 }
 
@@ -46,13 +48,7 @@
     z-index: 999;
 }
 
-/* form{
-    position: relative;
+.active::after {
+    background-color: #cc003b !important;
+    width: 100% !important;
 }
-.btn-search{
-    position: absolute;
-    right: 30%;
-    top: 30%;
-    color: gray;
-    cursor: text;
-} */

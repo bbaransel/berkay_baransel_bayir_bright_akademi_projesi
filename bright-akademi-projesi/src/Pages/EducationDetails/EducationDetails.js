@@ -9,7 +9,7 @@ const EducationDetails = () => {
   return (
     <>
       <Container className='d-flex justify-content-center align-items-center '>
-        <Card className='border-0 w-75 mt-5 p-5 text-light card-bau'>
+        <Card className='border-0 w-75 mt-5 px-3 py-4 text-light card-bau'>
           <Card.Body>
             <Card.Title className='display-5 mb-5'>
               {context.edu[id].Name}
@@ -24,7 +24,7 @@ const EducationDetails = () => {
               Detaylı bilgi için lütfen pdf dosyasına bakınız.
             </Card.Text>
           </Card.Body>
-          <Button href={context.edu[id].Link} className=' mx-auto btn-danger mt-3' >PDF DOSYASI</Button>
+          <Button href={context.edu[id].Link} className=' mx-auto btn-danger mt-3' target='_blank' >PDF DOSYASI</Button>
         </Card>
       </Container>
     </>

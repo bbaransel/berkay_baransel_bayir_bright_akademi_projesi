@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, ButtonGroup, Container, Image } from 'react-bootstrap'
+import { Button, ButtonGroup, Card, Container, Image } from 'react-bootstrap'
 import './Footer.css';
 import logo from '../../Images/logo.png';
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
                         <Button variant='light' className='rounded-circle p-1 btn-float' href='https://github.com/bbaransel' target='_blank'><i className="fa-brands fa-github fs-3"></i></Button>
                         <Button variant='light' className='rounded-circle p-1 btn-float' href='https://www.linkedin.com/in/berkay-baransel-bayir-334465282/' target='_blank'><i className="fa-brands fa-linkedin fs-3"></i></Button>
                     </ButtonGroup>
-                    <div className='w-25 m-auto pt-3 footer-end'>Copyright &copy; 2023 Berkay Baransel BAYIR. </div>
+                    <div className='m-auto pt-3 footer-end'>Copyright &copy; 2023 Berkay Baransel BAYIR. </div>
                 </Container>
             </Container>
         </>

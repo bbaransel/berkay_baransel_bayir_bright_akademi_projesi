@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { AppContext } from '../../Contexts/Context';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Card, Col, Container, Row } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
@@ -20,8 +20,8 @@ const InstructorDetails = () => {
               <Card.Text className='my-2'><FontAwesomeIcon className='me-2 inst-detail-phone' icon={faPhone} />{context.inst[id].Phone}</Card.Text>
             </Card.Body>
             <Card.Footer className='bg-transparent text-center py-3'>
-              <a className='mini-link me-2' href={context.inst.Github} target='_blank' ><i className="fa-brands fa-github fs-3"></i></a>
-              <a className='mini-link me-2' href={context.inst.Linkedin} target='_blank' ><i className="fa-brands fa-linkedin fs-3 "></i></a>
+              <Card.Link className='mini-link' href={context.inst[id].Github} target='_blank' ><i className="fa-brands fa-github fs-3"></i></Card.Link>
+              <Card.Link className='mini-link' href={context.inst[id].Linkedin} target='_blank' ><i className="fa-brands fa-linkedin fs-3 "></i></Card.Link>
             </Card.Footer>
           </Col>
           <Col lg={7}>

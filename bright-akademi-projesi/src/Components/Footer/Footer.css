@@ -5,9 +5,12 @@
 .footer-container {
     background-color: #66003B;
 }
-.footer-end{
+
+.footer-end {
     border-top: 1px solid #cc003b;
+    width: 25%;
 }
+
 .footer-wave {
     bottom: 0;
     left: 0;
@@ -26,4 +29,16 @@
 
 .footer-wave .shape-fill {
     fill: #66003B;
+}
+
+@media only screen and (max-width: 1210px) {
+    .footer-end {
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 770px) {
+    .footer-end {
+        width: 50%;
+    }
 }

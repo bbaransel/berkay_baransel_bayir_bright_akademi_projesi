@@ -1,70 +1,23 @@
-# Getting Started with Create React App
+# berkay_baransel_bayir_bright_akademi_projesi
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Proje Planlaması 
 
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Kullanılan teknolojiler
+    -Styling için genel olarak bootstrap componentlerini ve classlarını kullandım.
+    -Bootstrapin yetmediği yerlerde Css kullandım. Yazdığım style'ları düzenli olması ve bir componentin css dosyasını aradığımda rahatça bulabilmek için genelde ilgili component veya page ile aynı klasörde tuttum.
+    -Projede kullandığım bilgilerin çoğunu "https://baubright.com/" ve "https://www.wissenakademie.com/" adreslerinden aldım.
+    -Renk seçimlerimi internette arayıp bulduğum bir palet ile yaptım ( genel olarak bu palet üstünden çalıştım "https://www.color-hex.com/color-palette/82839" )
+    -Projenin başında bu kullanacağım renkleri ayrı css dosyasının içinde birer değişkenin içine almak aklıma gelmediği için yapmadım ve sonradan da yapmadığım için çok pişman oldum.
+    -Arkaplan animasyonumu oluştururken önce backgrounduma linear-gradient bir color değeri vererek birden çok rengi yanyana yumuşak bir geçiş ile gördüm. Sonrasında @keyframes yardımı ile boyutunu 3 katına çıkardığım backgroundımın pozisyononu değiştirecek kodları yazdım ve sağa sola loop halinde haraket etmesini sağladım.
+    -Eğitim türlerinin özelliklerini bir obje içine alıp, tüm eğitim türlerini bir dizi içine aldım. Böylece tek bir eğitim detay sayfası (EducationsDetails) hazırlayıp useContext ve useParams yardımı ile her eğitim detayı için ayrı sayfa oluşturabildim.
+    -Bütün eğitimlerin tek sayfada göstermek istemedim bu yüzden bir Eğitimler sayfam yok ama ana sayfaya her bir eğitimi bir card yapısı içinde Map() yardımı ile tek bir component hazırlayarak ekleyebilirdim.
+    -Eğitim türleri için yaptıklarımın benzerini Eğitmenler ve Eğitmenler Detay Sayfası için de yaptım. Başta bootstrapten hazır Image Carousel yapısını aldım fakat çözemediğim bir nedenden ötürü çalıştıramadım(Projeden sonra bakıp çözücem). Bu yüzden kendim bir image slider yaptım. İlk olarak daha öncesinde ödev olarak yapmış olduğumuzdan yararlanmak istedim fakat addEventListener tarzı fonksiyonlar çalışmadığı için değiştirmem gerekti. Imagelarımı src kısmına dosya yolu olarak vermeye çalıştığımda sayfada görüntülenmiyorlardı ben de biraz araştırıp görseli bir değişkenin içine import ederek öyle source kısmına yazdım.Sliderımda kullanacağım imagelarım için oluşturduğum bu değişkenleri bir dizi içine aldım ve Map() yardımı ile sliderımı oluşturdum. 
+        -Sliderda önceki ve sonraki görsele gitmemi sağlayacak fonksiyonlarımda kullanmak için useState ile bir tane imageIndex adında değişken oluşturdum.
+        -Oluşturduğum bu imageIndex değişkenini kullanarak sadece previous ve next fonksiyonlarımı değil ayrıca otomatik geçiş efektini de hazırladım.
+        -Otomatik geçiş animasyonunu oluştururken useEffectin;
+            birinci parametresinde setInterval fonksiyonunu hazırlayıp bir değişken içine aldım
+            ikinci parametresinde birinci parametrede tanımladığım değişkeni clearInterval fonksiyonu içine yazarak setIntervalimi sıfırlayacak kısmı yazdım.
+             üçüncü parametresine [imageIndex] yazarak da animasyonumun sıfırlamak için takip edeceği durumu belirttim böylece sayfa ilk çalıştığında ve imageIndexin değeri her değiştiğinde zamanlamayı yenileyecek.
+    -Hero'm da kullandığım daktilo animasyonunu node.js ile indirdiğim react-simple-typewriter isimli bir component ile yaptım. (https://www.npmjs.com/package/react-simple-typewriter?activeTab=readme) Nasıl çalıştığını bağlantıdaki usage kısmından ve bir kaç deneme yanılma ile öğrenip kullandım.
+    -Ana Sayfada kullandığım dalga şekillerini araştırma yapanken karşıma çıkan bir site olan "https://www.shapedivider.app/" yardımı ile yaptım basit ve kullanışlı bir site.
+    -Olabildiğince componentlerden yararlanmaya çalıştım. Yanlışlarım ve eksiklerim konusunda geri dönüş yaparsanız çok sevinirim. Projeyi yaparken yeni şeyler öğrenmek, öğrendiklerimi kullanmak, hata yapmak ve bu hataları çözmek çok keyifliydi, vakit ayırdığınız için teşekkürler.

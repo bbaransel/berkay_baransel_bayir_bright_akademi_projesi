@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
 import { AppContext } from '../../Contexts/Context';
 import InstructorMiniDetails from '../../Components/InstructorMiniDetails/InstructorMiniDetails';
+import { Link } from 'react-router-dom';
 
 const Instructors = () => {
   const context = useContext(AppContext)
@@ -31,7 +32,7 @@ const Instructors = () => {
   return (
     <>
       <Container className='d-flex flex-column justify-content-center align-items-center'>
-        <Card className='gallery-wrap border-0 position-relative mt-3 mb-5 rounded-0'>
+        <Card className='gallery-wrap border-0 position-relative mt-4 mb-5 rounded-0'>
           <Button className='btns back-btn p-3 fs-1 bg-transparent  position-absolute top-0 bottom-0 start-0' onClick={prevImage}><FontAwesomeIcon icon={faAngleLeft} /></Button>
           <div className='gallery'>
             {context.images.map(({ url, alt }) => (
@@ -39,7 +40,7 @@ const Instructors = () => {
             ))}
           </div>
           <Button className='btns next-btn fs-1 p-3 bg-transparent  position-absolute top-0 bottom-0 end-0' onClick={nextImage}><FontAwesomeIcon icon={faAngleRight} /></Button>
-          <a href={`/instructors/${imageIndex}`} className='detail-btn fs-3 w-100 position-absolute bottom-0 start-0'></a>
+          <Link to={`/instructors/${imageIndex}`} className='detail-btn fs-3 w-100 position-absolute bottom-0 start-0'></Link>
         </Card>
         <Row className='mt-5 d-flex justify-content-center align-items-center'>
           {context.inst.map(i => (

@@ -4,6 +4,7 @@ import { Button, Card, Col, Row } from 'react-bootstrap'
 import { AppContext } from '../../Contexts/Context';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 const InstructorMiniDetails = ({ id, name, github, email, phone, linkedin }) => {
     const context = useContext(AppContext);
 
@@ -19,9 +20,11 @@ const InstructorMiniDetails = ({ id, name, github, email, phone, linkedin }) => 
                     </Card.Body>
                     <Card.Footer>
                         <Card.Text className='d-flex justify-content-center align-items-center'>
-                            <a className='mini-link me-2' href={github} target='_blank' ><i className="fa-brands fa-github fs-3 text-dark"></i></a>
-                            <a className='mini-link me-2' href={github} target='_blank' ><i className="fa-brands fa-linkedin fs-3 text-dark"></i></a>
-                            <Button variant='secondary' href={`/instructors/${id}`} className='p-1' >Detaylı bilgi</Button>
+                            <Link className='mini-link me-2' to={github} target='_blank' ><i className="fa-brands fa-github fs-3 text-dark"></i></Link>
+                            <Link className='mini-link me-2' to={github} target='_blank' ><i className="fa-brands fa-linkedin fs-3 text-dark"></i></Link>
+                            <Link to={`/instructors/${id}`}>
+                                <Button variant='secondary' className='p-1' >Detaylı bilgi</Button>
+                            </Link>
                         </Card.Text>
                     </Card.Footer>
                 </Card>
